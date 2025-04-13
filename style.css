@@ -1,0 +1,187 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;500&display=swap');
+
+/* Add Custom Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff6f61;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ff4a3d;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* General Reset */
+body, h1, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #1e3c72, #2a5298);
+    color: #fff;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    overflow-x: hidden;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styling */
+header {
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid #ff6f61;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: slideDown 1s ease-in-out;
+}
+
+/* Slide-down Animation */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+header h1 {
+    font-size: 4rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ffdf00; /* Gold color for the title */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header h1:hover {
+    color: #ff6f61; /* Interactive hover effect */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+header p {
+    font-size: 1.3rem;
+    color: #dcdcdc;
+    font-style: italic; /* Adds a stylish touch */
+    margin-top: 10px;
+}
+
+/* Main Content */
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+main .btn {
+    display: inline-block;
+    padding: 20px 50px;
+    font-size: 1.8rem;
+    color: #fff;
+    background-color: #ff6f61;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    font-weight: bold; /* Makes the button text stand out */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: pulse 2s infinite;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+main .btn:hover {
+    background-color: #ff4a3d;
+    transform: translateY(-5px) scale(1.1); /* Adds a bounce effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Footer Styling */
+footer {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+    color: #dcdcdc;
+    border-top: 2px solid #ff6f61;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+footer p {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #ffdf00; /* Gold color for footer text */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer p:hover {
+    color: #ff6f61; /* Interactive hover effect */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Story Content Styling */
+.story-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    color: #f0f0f0;
+    line-height: 1.8;
+    font-family: 'Roboto', sans-serif;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.story-content p {
+    margin-bottom: 20px;
+}
+
+.story-content strong {
+    font-size: 1.3rem;
+    color: #ff6f61;
+}
